@@ -1,0 +1,102 @@
+.home {
+  margin-top: 200px;
+
+  .homeWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    .homeTitle {
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    .homeDescription {
+      max-width: 600px;
+      font-size: 16px;
+      line-height: 25px;
+      margin: auto;
+      margin-top: 20px;
+      color: rgb(100, 100, 100);
+    }
+
+    .homeBackgroundImgWrap {
+      img {
+        position: absolute;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgb(221, 0, 255);
+      }
+
+      .backImg1 {
+        top: 20px;
+        left: -50px;
+        animation: bounce 1s infinite;
+      }
+
+      .backImg2 {
+        top: -55px;
+        left: 300px;
+        animation: bounce 0.7s infinite;
+      }
+
+      .backImg3 {
+        bottom: -55px;
+        right: -70px;
+        animation: bounce 1.5s infinite;
+      }
+
+      .backImg4 {
+        bottom: -100px;
+        left: 0;
+        width: 90px;
+        height: 90px;
+        animation: bounce 0.8s infinite;
+      }
+
+      .backImg5 {
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        animation: bounce 1.3s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px); /* Подпрыгивание на 1 см (10px) */
+        }
+      }
+    }
+
+    .homeSliderWrap {
+      display: flex;
+      overflow-x: auto;
+      width: 100%;
+      white-space: nowrap;
+      margin-top: 40px;
+
+      & img {
+        margin: 0px 10px;
+        border-radius: 10px;
+        width: 300px;
+        flex-shrink: 0;
+        border: 2px solid transparent;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

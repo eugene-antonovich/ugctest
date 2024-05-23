@@ -1,0 +1,90 @@
+.cardWrap {
+  border: 0.5px solid rgba(142, 98, 255, 0.431);
+  padding: 25px;
+  border-radius: 20px;
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(142, 98, 255, 0.071);
+    scale: 1.03;
+    transition: 0.2s;
+  }
+
+  .cardPriceWrap {
+    display: flex;
+    justify-content: center;
+
+    .cardPrice {
+      font-size: 34px;
+      margin-top: 10px;
+      display: flex;
+      color: rgb(142, 98, 255);
+
+      .cardPriceIcon {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .cardTarif {
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .cardList {
+    margin-top: 30px;
+
+    .cardItemWrap {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      font-size: 18px;
+      font-weight: 100;
+
+      .cardItemIcon {
+        margin: 0px 15px;
+        color: rgb(142, 98, 255);
+      }
+
+      .cardItemIconNotIncluded {
+        margin: 0px 15px;
+        color: rgba(128, 128, 128, 0.701);
+      }
+
+      & li {
+        margin-top: 20px;
+      }
+    }
+
+    .cardNotIncluded {
+      margin-top: 20px;
+      text-decoration: line-through;
+      font-size: 18px;
+      font-weight: 100;
+      color: gray;
+    }
+  }
+
+  .cardButton {
+    width: 350px;
+    margin-top: 25px;
+    padding: 15px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(142, 98, 255);
+    color: white;
+    transition: 0.2s;
+    font-size: 18px;
+
+    &:hover {
+      transition: 0.2s;
+      cursor: pointer;
+      background-color: rgba(142, 98, 255, 0.794);
+    }
+  }
+}

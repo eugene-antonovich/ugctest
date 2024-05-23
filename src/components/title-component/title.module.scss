@@ -1,0 +1,21 @@
+.titleWrap {
+  display: flex;
+  width: 100%;
+  .title {
+    white-space: nowrap;
+    margin: auto;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0px 40px;  
+  }
+
+  .titlePseudo {
+    flex-shrink: 1;
+    margin-top: 20px;
+    width: 50%;
+    height: 1px;
+    background-color: black;
+  }
+}

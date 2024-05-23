@@ -1,0 +1,36 @@
+.cardTextWrapRight {
+  text-align: start;
+  width: 300px;
+
+  .cardTitle {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+
+  .cardDescription {
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 25px;
+    color: #838485;
+    margin-top: 10px;
+  }
+}
+.cardTextwrap {
+  text-align: right;
+  width: 300px;
+
+  .cardTitle {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+
+  .cardDescription {
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 25px;
+    color: #838485;
+    margin-top: 10px;
+  }
+}
