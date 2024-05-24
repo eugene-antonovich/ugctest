@@ -2,7 +2,6 @@
   padding: 100px 0px;
   background-color: #f8f9fc;
 
-
   .contactWrap {
     margin: auto;
     width: 80%;
@@ -53,5 +52,11 @@
       justify-content: space-between;
       margin-top: 70px;
     }
+  }
+
+  .contactMap {
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
   }
 }
