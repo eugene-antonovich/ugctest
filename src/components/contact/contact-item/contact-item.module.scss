@@ -1,0 +1,35 @@
+.itemWrap {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 0px 15px;
+  background-color: rgba(142, 98, 255, 0.119);
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+
+  .itemIconWrap {
+    font-size: 34px;
+    color: rgb(142, 98, 255);
+  }
+
+  .itemTitle {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(67, 67, 67);
+  }
+
+  .itemDescription {
+    font-size: 16px;
+    margin-top: 10px;
+    color: gray;
+    font-weight: 400;
+  }
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.3s;   
+  }
+}

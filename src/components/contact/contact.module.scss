@@ -1,6 +1,7 @@
 .contact {
-  margin-top: 200px;
-  margin-bottom: 100px;
+  padding: 100px 0px;
+  background-color: #f8f9fc;
+
 
   .contactWrap {
     margin: auto;
@@ -45,6 +46,12 @@
         scale: 1.03;
         transition: 0.2s;
       }
+    }
+
+    .contactItemsWrap {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 70px;
     }
   }
 }

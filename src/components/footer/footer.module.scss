@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 50px;
+
+  .footerWrap {
+    display: flex;
+    flex-direction: column;
+
+    .footerLogo {
+      width: 200px;
+      margin: auto;
+      & img {
+        width: 100%;
+      }
+    }
+
+    .footerIconsWrap {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footerListWrap {
+      margin-top: 40px;
+      .footerList {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .footerBottomWrap {
+    border-top: 1px solid rgb(135, 135, 135);
+    padding: 40px 0px;
+    margin-top: 70px;
+
+    .footerTitle {
+      font-size: 18px;
+      color: gray;
+    }
+  }
+}

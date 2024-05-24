@@ -2,13 +2,14 @@
   display: flex;
   width: 100%;
   .title {
+    color: rgb(121, 121, 121);
     white-space: nowrap;
     margin: auto;
     letter-spacing: 1px;
     font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
-    margin: 0px 40px;  
+    margin: 0px 40px;
   }
 
   .titlePseudo {
@@ -16,6 +17,6 @@
     margin-top: 20px;
     width: 50%;
     height: 1px;
-    background-color: black;
+    background-color: rgb(121, 121, 121);
   }
 }

@@ -1,10 +1,10 @@
-.pricing {
+.team {
   padding: 100px 0px;
 
   .cardsWrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

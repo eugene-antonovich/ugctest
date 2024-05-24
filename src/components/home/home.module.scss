@@ -1,5 +1,6 @@
 .home {
-  margin-top: 200px;
+  margin-top: 100px;
+  padding: 100px 0px;
 
   .homeWrap {
     display: flex;
@@ -22,6 +23,7 @@
     }
 
     .homeBackgroundImgWrap {
+      margin-top: 20px;
       img {
         position: absolute;
         border-radius: 50%;
@@ -76,18 +78,32 @@
     }
 
     .homeSliderWrap {
-      display: flex;
-      overflow-x: auto;
-      width: 100%;
-      white-space: nowrap;
-      margin-top: 40px;
+      position: relative;
+      z-index: 1;
+
+      .videoWrap {
+        width: 250px;
+        height: 500px;
+        margin: 0px 40px;
+
+        .video {
+          width: 238px;
+          height: 505px;
+          border-radius: 35px;
+          object-fit: cover;
+          border: 2px solid black;
+          top: 0;
+          left: 0;
+        }
+      }
 
       & img {
-        margin: 0px 10px;
-        border-radius: 10px;
-        width: 300px;
-        flex-shrink: 0;
-        border: 2px solid transparent;
+        position: absolute;
+        width: 555px;
+        z-index: 10;
+        top: -25px;
+        left: 53.5%;
+        transform: translate(-50%);
 
         &:hover {
           cursor: pointer;

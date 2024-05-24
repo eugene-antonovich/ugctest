@@ -1,9 +1,7 @@
 import home from "./home.module.scss";
-import { Swiper, SwiperSlide } from "swiper/react";
-import img1 from "../../img/img1.png";
-import img2 from "../../img/img2.png";
-import img3 from "../../img/img3.png";
-import img4 from "../../img/img4.png";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import backImg1 from "../../img/background-img/back-img1.png";
 import backImg2 from "../../img/background-img/back-img2.png";
@@ -11,26 +9,65 @@ import backImg3 from "../../img/background-img/back-img3.png";
 import backImg4 from "../../img/background-img/back-img4.png";
 import backImg5 from "../../img/background-img/back-img5.png";
 
-// import videoMain from "../../img/video1.MP4";
+import img1 from "../../img/img1.png";
+import img2 from "../../img/img2.png";
+import img3 from "../../img/img3.png";
+import img4 from "../../img/img4.png";
+
+import phone from "../../img/slider/iphone1.png";
 
 const Home = () => {
-  //   const container = document.getElementById("homeSliderWrap");
-  //   let scrollAmount = 0;
-  //   let scrollStep = 1; // шаг прокрутки
+  function SimpleSlider() {
+    const settings = {
+      swipe: true,
+      infinite: true,
+      speed: 2000,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      pauseOnHover: false,
+    };
+    return (
+      <div className={home.homeSliderWrap}>
+        <img src={phone} alt="phone" />
+        <Slider {...settings}>
+          <div className={home.videoWrap}>
+            <video className={home.video} autoPlay muted loop>
+              {/* <source src={img1} type="video/mp4" /> */}
+            </video>
+          </div>
+          <div className={home.videoWrap}>
+            <video className={home.video} autoPlay muted loop>
+              {/* <source src={img2} type="video/mp4" /> */}
+            </video>
+          </div>
+          <div className={home.videoWrap}>
+            <video className={home.video} autoPlay muted loop>
+              {/* <source src={img3} type="video/mp4" /> */}
+            </video>
+          </div>
+          <div className={home.videoWrap}>
+            <video className={home.video} autoPlay muted loop>
+              {/* <source src={img4} type="video/mp4" /> */}
+            </video>
+          </div>
+          <div className={home.videoWrap}>
+            <video className={home.video} autoPlay muted loop>
+              {/* <source src={img1} type="video/mp4" /> */}
+            </video>
+          </div>
+          <div className={home.videoWrap}>
+            <video className={home.video} autoPlay muted loop>
+              {/* <source src={img2} type="video/mp4" /> */}
+            </video>
+          </div>
+        </Slider>
+      </div>
+    );
+  }
 
-  //   function autoScroll() {
-  //     scrollAmount += scrollStep;
-  //     container.scrollLeft = scrollAmount;
-
-  //     // Если дошли до конца, возвращаемся в начало
-  //     if (scrollAmount >= container.scrollWidth - container.clientWidth) {
-  //       scrollAmount = 0;
-  //     }
-
-  //     requestAnimationFrame(autoScroll); // рекурсивный вызов для плавной прокрутки
-  //   }
-
-  //   autoScroll();
   return (
     <section className={home.home}>
       <div className="container">
@@ -42,6 +79,21 @@ const Home = () => {
             et dolore.
           </p>
           <div className={home.homeBackgroundImgWrap}>
+            <div className={home.phoneContainer}>
+              <div className={home.iphone}>
+                <div className={home.screen}>
+                  <div className={home.notch}>
+                    <div className={home.camera}></div>
+                    <div className={home.speaker}></div>
+                  </div>
+                  {/* <div className={home.content}>
+                    </div> */}
+                </div>
+                <div className={home.buttonVolumeUp}></div>
+                <div className={home.buttonVolumeDown}></div>
+                <div className={home.buttonPower}></div>
+              </div>
+            </div>
             <img
               className={home.backImg1}
               src={backImg1}
@@ -76,16 +128,7 @@ const Home = () => {
               alt="background image"
             />
           </div>
-          <div className={home.homeSliderWrap} id="homeSliderWrap">
-            <img src={img1} alt="img" />
-            <img src={img2} alt="img" />
-            <img src={img3} alt="img" />
-            <img src={img4} alt="img" />
-            <img src={img1} alt="img" />
-            <img src={img2} alt="img" />
-            <img src={img3} alt="img" />
-            <img src={img4} alt="img" />
-          </div>
+          {SimpleSlider()}
         </div>
       </div>
     </section>

@@ -1,0 +1,26 @@
+.iconWrap {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border: 1.2px dashed rgb(169, 169, 169);
+  border-radius: 50%;
+  margin: 0px 20px;
+  transition: 0.3s;
+
+  & a {
+    color: rgb(142, 98, 255);
+    padding: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    scale: 1.1;
+    transition: 0.3s;
+  }
+}
