@@ -3,13 +3,13 @@ import FooterListItem from "./footer-list-item/footer-list-item.component";
 import footer from "./footer.module.scss";
 
 import logo from "../../img/header-logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
+  faTwitter,
   faGooglePlay,
   faLinkedin,
-  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
