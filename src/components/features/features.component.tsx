@@ -16,7 +16,7 @@ const Features = () => {
   return (
     <section className={features.features} id="features-section">
       <div className="container">
-        <Title title={"features for our app "} />
+        <Title title={"features for our app"} />
         <div className={features.featuresWrap}>
           <div className={features.leftCardsWrap}>
             <div className={features.cardWrap}>
