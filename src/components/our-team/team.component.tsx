@@ -16,7 +16,7 @@ import Title from "../title-component/title.component";
 
 const Team = () => {
   return (
-    <section className={team.team}>
+    <section className={team.team} id="team-section">
       <div className="container">
         <Title title={"Our team"} />
         <div className={team.cardsWrap}>

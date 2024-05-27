@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HowWork = () => {
   return (
-    <section className={work.work}>
+    <section className={work.work} id="how-it's-work-section">
       <div className="container">
         <Title title={"How it's work"} />
         <div className={work.workWrap}>

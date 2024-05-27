@@ -70,4 +70,16 @@
 
     transition: 0.2s;
   }
+
+  a {
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      color: rgb(197, 175, 255);
+
+      transition: 0.2s;
+    }
+  }
 }

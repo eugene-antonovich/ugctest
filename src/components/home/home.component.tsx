@@ -9,10 +9,11 @@ import backImg3 from "../../img/background-img/back-img3.png";
 import backImg4 from "../../img/background-img/back-img4.png";
 import backImg5 from "../../img/background-img/back-img5.png";
 
-import img1 from "../../img/img1.png";
-import img2 from "../../img/img2.png";
-import img3 from "../../img/img3.png";
-import img4 from "../../img/img4.png";
+import imgSlide1 from "../../img/slider/photo-output.png";
+import imgSlide2 from "../../img/slider/photo-output (1).png";
+import imgSlide3 from "../../img/slider/photo-output (2).png";
+import imgSlide4 from "../../img/slider/photo-output (3).png";
+import imgSlide5 from "../../img/slider/photo-output (4).png";
 
 import phone from "../../img/slider/iphone1.png";
 
@@ -35,13 +36,16 @@ const Home = () => {
         <Slider {...settings}>
           <div className={home.videoWrap}>
             <video className={home.video} autoPlay muted loop>
-              {/* <source src={img1} type="video/mp4" /> */}
+              <source
+                src="https://youtu.be/1nTmxID76rk?si=q5CvJ5j12Jp3Un0v"
+                type="video/mp4"
+              />
             </video>
           </div>
           <div className={home.videoWrap}>
             <video className={home.video} autoPlay muted loop>
               {/* <source src={img2} type="video/mp4" /> */}
-            </video>
+            </video> 
           </div>
           <div className={home.videoWrap}>
             <video className={home.video} autoPlay muted loop>
@@ -69,7 +73,7 @@ const Home = () => {
   }
 
   return (
-    <section className={home.home}>
+    <section className={home.home} id="home-section">
       <div className="container">
         <div className={home.homeWrap}>
           <h1 className={home.homeTitle}>Manage everything in one place</h1>
@@ -86,8 +90,6 @@ const Home = () => {
                     <div className={home.camera}></div>
                     <div className={home.speaker}></div>
                   </div>
-                  {/* <div className={home.content}>
-                    </div> */}
                 </div>
                 <div className={home.buttonVolumeUp}></div>
                 <div className={home.buttonVolumeDown}></div>

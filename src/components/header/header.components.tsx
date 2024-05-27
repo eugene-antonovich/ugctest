@@ -12,13 +12,24 @@ const Header = () => {
           </div>
           <div className={header.headerMenuListWrap}>
             <ul className={header.headerMenuList}>
-              <HeaderListItem title={"Home"} />
-              <HeaderListItem title={"Abou us"} />
-              <HeaderListItem title={"Features"} />
-              <HeaderListItem title={"Pricing"} />
-              <HeaderListItem title={"Application"} />
-              <HeaderListItem title={"Team"} />
-              <HeaderListItem title={"Contact"} />
+              <HeaderListItem title={"Home"} linkSection={"home-section"} />
+              <HeaderListItem
+                title={"Features"}
+                linkSection={"features-section"}
+              />
+              <HeaderListItem
+                title={"Pricing"}
+                linkSection={"pricing-section"}
+              />
+              <HeaderListItem
+                title={"How it's work"}
+                linkSection={"how-it's-work-section"}
+              />
+              <HeaderListItem title={"Team"} linkSection={"team-section"} />
+              <HeaderListItem
+                title={"Contact"}
+                linkSection={"contact-section"}
+              />
             </ul>
           </div>
           <div className={header.headerLoginButtonWrap}>

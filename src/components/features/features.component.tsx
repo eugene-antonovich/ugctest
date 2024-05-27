@@ -14,7 +14,7 @@ import Card from "./cards/card.component";
 
 const Features = () => {
   return (
-    <section className={features.features}>
+    <section className={features.features} id="features-section">
       <div className="container">
         <Title title={"features for our app "} />
         <div className={features.featuresWrap}>
