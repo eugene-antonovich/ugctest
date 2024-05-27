@@ -55,7 +55,8 @@
   }
 }
 
-.headerListItem {
+.headerListItem,
+.headerListItem a {
   text-transform: uppercase;
   padding: 5px;
   margin: 0px 5px;
@@ -69,17 +70,5 @@
     color: rgb(197, 175, 255);
 
     transition: 0.2s;
-  }
-
-  a {
-    color: rgb(56, 56, 56);
-    text-decoration: none;
-
-    &:hover {
-      cursor: pointer;
-      color: rgb(197, 175, 255);
-
-      transition: 0.2s;
-    }
   }
 }

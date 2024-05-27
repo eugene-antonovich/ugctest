@@ -39,13 +39,15 @@ const Footer = () => {
           </div>
           <div className={footer.footerListWrap}>
             <ul className={footer.footerList}>
-              <FooterListItem title={"Home"} link={""} />
-              <FooterListItem title={"About Us"} link={""} />
-              <FooterListItem title={"Features"} link={""} />
-              <FooterListItem title={"Pricing"} link={""} />
-              <FooterListItem title={"Application"} link={""} />
-              <FooterListItem title={"Team"} link={""} />
-              <FooterListItem title={"Contact"} link={""} />
+              <FooterListItem title={"Home"} link={"home-section"} />
+              <FooterListItem title={"Features"} link={"features-section"} />
+              <FooterListItem title={"Pricing"} link={"pricing-section"} />
+              <FooterListItem
+                title={"How it's work"}
+                link={"how-it's-work-section"}
+              />
+              <FooterListItem title={"Team"} link={"team-section"} />
+              <FooterListItem title={"Contact"} link={"contact-section"} />
             </ul>
           </div>
         </div>
