@@ -9,8 +9,6 @@ const Header = () => {
   const [buttonState, setButtonState] = useState(true);
   const [listState, setListState] = useState(true);
 
-  
-
   const setMenuState = () => {
     setButtonState(!buttonState);
     setListState(!listState);

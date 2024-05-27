@@ -36,6 +36,14 @@
         top: 3%;
         left: 7%;
         animation: bounce 1s infinite;
+
+        @media (max-width: 773px) {
+          top: 20%;
+        }
+
+        @media (max-width: 555px) {
+          top: 24%;
+        }
       }
 
       .backImg2 {
@@ -64,6 +72,14 @@
         width: 80px;
         height: 80px;
         animation: bounce 1.3s infinite;
+
+        @media (max-width: 773px) {
+          top: -15%;
+        }
+
+        @media (max-width: 450px) {
+          top: -25%;
+        }
       }
 
       @keyframes bounce {
@@ -81,6 +97,9 @@
       position: relative;
       z-index: 1;
       width: 100%;
+      @media (max-width: 550px) {
+        display: none;
+      }
 
       .videoWrap {
         width: 250px;
@@ -106,6 +125,10 @@
         left: 51%;
         transform: translate(-50%);
 
+        @media (max-width: 550px) {
+          width: 325px;
+        }
+
         &:hover {
           cursor: pointer;
         }
@@ -116,8 +139,4 @@
       }
     }
   }
-}
-
-.slick-track {
-  width: 100%;
 }
