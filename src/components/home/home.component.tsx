@@ -2,6 +2,7 @@ import home from "./home.module.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useMediaQuery } from "react-responsive";
 
 import backImg1 from "../../img/background-img/back-img1.png";
 import backImg2 from "../../img/background-img/back-img2.png";
@@ -18,6 +19,8 @@ import imgSlide5 from "../../img/slider/photo-output (4).png";
 import phone from "../../img/slider/iphone1.png";
 
 const Home = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+
   function SimpleSlider() {
     const settings = {
       swipe: true,
@@ -25,9 +28,11 @@ const Home = () => {
       speed: 2000,
       autoplay: true,
       autoplaySpeed: 1000,
-      slidesToShow: 3,
+      // slidesToShow: 3,
       slidesToScroll: 1,
-      centerMode: true,
+      slidesToShow: isMobile ? 1 : 3,
+      // centerMode: true,
+      centerMode: !isMobile,
       pauseOnHover: false,
     };
     return (
@@ -36,16 +41,13 @@ const Home = () => {
         <Slider {...settings}>
           <div className={home.videoWrap}>
             <video className={home.video} autoPlay muted loop>
-              <source
-                src="https://youtu.be/1nTmxID76rk?si=q5CvJ5j12Jp3Un0v"
-                type="video/mp4"
-              />
+              {/* <source src={img} type="video/mp4" /> */}
             </video>
           </div>
           <div className={home.videoWrap}>
             <video className={home.video} autoPlay muted loop>
               {/* <source src={img2} type="video/mp4" /> */}
-            </video> 
+            </video>
           </div>
           <div className={home.videoWrap}>
             <video className={home.video} autoPlay muted loop>

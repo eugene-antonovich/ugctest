@@ -7,6 +7,10 @@
     border-radius: 10px;
     border: 1px solid rgba(128, 128, 128, 0.594);
 
+    @media (max-width: 425px) {
+      width: 90%;
+    }
+
     &:focus {
       border: 1px solid rgb(142, 98, 255);
       outline: none;

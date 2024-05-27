@@ -33,25 +33,25 @@
       }
 
       .backImg1 {
-        top: 20px;
-        left: -50px;
+        top: 3%;
+        left: 7%;
         animation: bounce 1s infinite;
       }
 
       .backImg2 {
-        top: -55px;
-        left: 300px;
+        top: -10%;
+        left: 30%;
         animation: bounce 0.7s infinite;
       }
 
       .backImg3 {
-        bottom: -55px;
-        right: -70px;
+        bottom: -10%;
+        right: 2%;
         animation: bounce 1.5s infinite;
       }
 
       .backImg4 {
-        bottom: -100px;
+        bottom: -15%;
         left: 0;
         width: 90px;
         height: 90px;
@@ -80,11 +80,12 @@
     .homeSliderWrap {
       position: relative;
       z-index: 1;
+      width: 100%;
 
       .videoWrap {
         width: 250px;
         height: 500px;
-        margin: 0px 40px;
+        margin: 0px 10px;
 
         .video {
           width: 238px;
@@ -102,7 +103,7 @@
         width: 555px;
         z-index: 10;
         top: -25px;
-        left: 53.5%;
+        left: 51%;
         transform: translate(-50%);
 
         &:hover {
@@ -115,4 +116,8 @@
       }
     }
   }
+}
+
+.slick-track {
+  width: 100%;
 }

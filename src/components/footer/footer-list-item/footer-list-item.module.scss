@@ -6,6 +6,13 @@
   transition: 0.2s;
   color: rgb(70, 70, 70);
 
+  @media (max-width: 950px) {
+    font-size: 18px;
+    margin: 0px 10px;
+    text-align: center;
+    display: flex;
+  }
+
   &:hover {
     cursor: pointer;
     color: rgb(142, 98, 255);

@@ -1,6 +1,12 @@
 .cardTextWrapRight {
+  margin: 0px 15px;
   text-align: start;
   width: 300px;
+
+  @media (max-width: 1250px) {
+    width: 100%;
+  }
+  
 
   .cardTitle {
     font-size: 1.25rem;
@@ -19,6 +25,15 @@
 .cardTextwrap {
   text-align: right;
   width: 300px;
+  margin: 0px 15px;
+
+  @media (max-width: 1250px) {
+    width: 200px;
+  }
+
+  @media (max-width: 1250px) {
+    width: 100%;
+  }
 
   .cardTitle {
     font-size: 1.25rem;
