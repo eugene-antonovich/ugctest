@@ -1,15 +1,20 @@
 .titleWrap {
   display: flex;
   width: 100%;
+
   .title {
     color: rgb(121, 121, 121);
-    white-space: nowrap;
     margin: auto;
     letter-spacing: 1px;
     font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
     margin: 0px 40px;
+    white-space: nowrap;
+
+    @media (max-width: 500px) {
+      white-space: wrap;
+    }
   }
 
   .titlePseudo {
