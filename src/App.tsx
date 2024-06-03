@@ -9,6 +9,13 @@ import Team from "./components/our-team/team.component";
 import Pricing from "./components/pricing/pricing.component";
 
 function App() {
+  window.addEventListener("unload", function (event) {
+    console.log("Unload event detected.");
+  });
+
+  window.addEventListener("beforeunload", function (event) {
+    console.log("Beforeunload event detected.");
+  });
   return (
     <div className="App">
       <Header />
